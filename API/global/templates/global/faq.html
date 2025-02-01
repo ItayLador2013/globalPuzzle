@@ -1,0 +1,190 @@
+{% extends "global/layout.html" %}
+
+{% block body %}
+
+{% if ismobile != False %}
+<style>
+			.question {
+                color: white;
+                font-size: 23px;
+                margin-left: 2vw;
+                font-weight: bold;
+            }
+
+            .answer {
+                color: white;
+                opacity: .9;
+                font-size: 19px;
+                margin-left: 4vw;
+                line-height: 1.5;
+            }
+
+            .QView {
+                background-color: rgba(47, 47, 48, 0.6);
+                border-radius: 15px;
+                padding: 6px;
+                margin-bottom: 5vh;
+                margin-left: 3vw;
+            }
+</style>
+{% else %}
+<style>
+			.question {
+                color: white;
+                font-size: 48px;
+                margin-left: 2vw;
+                font-weight: bold;
+                width: 50vw;
+            }
+
+            .answer {
+                color: white;
+                opacity: .9;
+                font-size: 38px;
+                margin-left: 4vw;
+                line-height: 1.5;
+            }
+
+            .QView {
+                background-color: rgba(47, 47, 48, 0.6);
+                border-radius: 25px;
+                padding: 6px;
+                margin-bottom: 5vh;
+                margin-left: 3vw;
+            }
+</style>
+{% endif %}
+
+{% if ismobile != False %}
+        <div style="width: 60vw;">
+            <p style="font-weight: bold; font-size: 31px; color: white;">Frequently Asked Questions</p>
+{% else %}
+        <div style="width: 95vw;">
+            <p style="font-weight: bold; font-size: 55px; color: white;">Frequently Asked Questions</p>
+{% endif %}
+            <div class="QView">
+                <p class="question">What is globalPuzzle?</p>
+                <p class="answer">globalPuzzle is a cutting-edge mobile app designed to 
+                    seamlessly connect individuals who have relocated to new countries and 
+                    share similar cultures and backgrounds. Our platform offers a secure and 
+                    nurturing environment where users can forge meaningful connections with others 
+                    who truly understand their unique experiences. By facilitating interactions 
+                    among like-minded individuals, globalPuzzle creates a supportive space for 
+                    building relationships based on shared cultural affinities in recently relocated individuals.
+                </p>
+            </div>
+
+            <div class="QView">
+                <p class="question">What is globalPuzzle LLC’s mission?</p>
+                <p class="answer">At globalPuzzle LLC, our mission is to connect individuals who have 
+                    relocated to new countries, facilitating the formation of friendships, the discovery 
+                    of supportive communities, and the fostering of a sense of belonging. We believe that
+                     regardless of location, everyone deserves to feel connected and valued. 
+                     Leveraging advanced technology and a comprehensive dataset, 
+                     our user-friendly platform matches individuals based on cultural backgrounds, 
+                     shared experiences, and personal preferences. By bridging the gap between newcomers
+                      and local communities, we enable individuals to build lasting relationships with 
+                      like-minded people who understand their challenges and share similar cultural 
+                      references. Through our commitment to innovation and inclusivity, 
+                      we strive to be the premier platform for anyone seeking friendship, community, 
+                      and a sense of belonging in their new country.</p>
+            </div>
+
+            <div class="QView">
+                <p class="question">How does the matching process work?</p>
+                <p class="answer">globalPuzzle employs advanced probability-based artificial 
+                    intelligence- made entirely by us- to facilitate meaningful connections among 
+                    individuals who have recently relocated to a different country, 
+                    with similar cultures and backgrounds. Our AI system utilizes a 
+                    comprehensive dataset to assess the likelihood of cultural similarity 
+                    based on users' country of origin and other factors as such. 
+                    We maintain strict standards, allowing only users with a high matching probability 
+                    to be included in the list of potential connections. By analyzing user-provided 
+                    information, such as stated hobbies, we determine compatibility and generate a 
+                    ranked list of the top 12 matches. To promote diverse cultural experiences, our 
+                    platform limits the inclusion of users from the same country to a maximum of four 
+                    out of the twelve matches. At globalPuzzle, our aim is to foster connections that 
+                    enrich cross-cultural interactions and create meaningful relationships.</p>
+            </div>
+
+            <div class="QView">
+                <p class="question">How to avoid phishing?</p>
+                <p class="answer">While we understand that it is impossible to completely eliminate the risk 
+                    of phishing, we prioritize your safety and recommend taking certain precautions when
+                     engaging with other users on our platform. It is crucial not to disclose any personal 
+                     information, including addresses, phone numbers, or email addresses. Additionally, we urge you to 
+                      remain vigilant for any suspicious activity during chats or conversations 
+                      and promptly report any concerning behavior. To enhance security, we strongly 
+                      encourage utilizing the video calling feature as much as possible instead of 
+                      relying solely on text messaging. By adhering to these guidelines, you can 
+                      maximize your safety while enjoying meaningful connections on globalPuzzle.</p>
+            </div>
+
+            <div class="QView">
+                <p class="question">Why use the in-app messenger rather than phone or any other messengers?</p>
+                <p class="answer">At globalPuzzle, we place the utmost emphasis on safety and privacy, 
+                    and we are dedicated to providing you with the best possible user experience. In 
+                    order to ensure your safety and maintain a high level of privacy, we STRONGLY 
+                    recommend utilizing ONLY the in-app chat and calling services. 
+                    By using these built-in features, you can communicate and connect 
+                    with others seamlessly, without the need to share personal information 
+                    such as phone numbers or email addresses. This practice aligns with our 
+                    commitment to safeguarding your privacy and ensuring that your interactions 
+                    remain secure and meaningful. By adhering to these guidelines and 
+                    relying solely on our in-app services, you can confidently enjoy a safe 
+                    and enriching experience on globalPuzzle.</p>
+            </div>
+
+            <div class="QView">
+                <p class="question">How to change personal information?</p>
+                <p class="answer">To provide you with full control over your personal information, 
+                    GlobalPuzzle offers a convenient and user-friendly option to edit any details 
+                    you have provided during profile creation. Simply navigate to the settings page 
+                    within the app by tapping the "≡" icon when viewing your profile. From there,
+                     you can effortlessly modify or delete any information as desired, ensuring 
+                     your profile accurately reflects your preferences and evolving needs. Once 
+                     you have made the desired changes, simply save them, and your updated 
+                     profile will be securely updated. At globalPuzzle, we prioritize your 
+                     privacy and strive to empower you with seamless control over your personal information.</p>
+            </div>
+
+            <div class="QView">
+                <p class="question">What to do if another user has been harassing/bullying me?</p>
+                <p class="answer">At globalPuzzle, we are committed to maintaining a safe and respectful 
+                    community environment, and we take reports of harassment or bullying very seriously. 
+                    If you believe that another user has been engaging in such behavior towards you, we 
+                    encourage you to report the incident to us. Our dedicated team will conduct a thorough 
+                    investigation, carefully assessing the details to ensure a fair and comprehensive 
+                    evaluation. We prioritize community guidelines and foster an atmosphere of honesty and integrity.
+                    However, we kindly request that reports be made in good faith and with genuine concerns. 
+                    Filing a false report or misusing the app's reporting system carries the same consequences 
+                    as abusing our services. We strive to create a supportive and inclusive platform, and your
+                     cooperation in adhering to our policies helps maintain the integrity of our community.
+                    Rest assured, your report will be handled with utmost care and confidentiality. Together, 
+                    we can cultivate a positive and respectful environment for all globalPuzzle users.
+                    </p>
+            </div>
+
+            <div class="QView">
+                <p class="question">What to do in case my user was banned from the app?</p>
+                <p class="answer">In order to ensure a positive and secure environment for all our users, 
+                    globalPuzzle maintains a stringent policy regarding suspicious activity or harassment. 
+                    If your account has been banned, it indicates that we have identified such behavior 
+                    associated with your user account. However, we understand that misunderstandings 
+                    can occur, and if you believe that our conclusion is misplaced, we encourage you to 
+                    reach out to our dedicated support team. They will carefully reassess your account 
+                    activity and provide you with an opportunity to present your case. Please understand 
+                    that the safety and well-being of our user community is our utmost priority. We maintain 
+                    a zero-tolerance approach towards any actions that jeopardize the positive experience 
+                    of our users. In the event that we confirm the occurrence of such behavior with your 
+                    user account, we will enforce a ban from further in-app activities. Additionally, your 
+                    device and IP address may be flagged as forbidden to prevent the creation of any future 
+                    accounts. We are committed to fairness, thoroughness, and maintaining a secure environment 
+                    for everyone on our platform. Should you have any concerns or questions regarding the 
+                    status of your account, our support team is here to assist you.</p>
+            </div>
+
+
+        </div>
+
+{% endblock %}

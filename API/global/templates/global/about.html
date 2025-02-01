@@ -1,0 +1,62 @@
+{% extends "global/layout.html" %}
+
+{% block body %}
+
+{% if ismobile != False %}
+<div style="width: 75vw;">
+{% else %}
+<div style="width: 95vw;">
+{% endif %}
+
+    {% if ismobile != False %}
+    <p style="font-weight: bold; font-size: 32px; color: white;">About globalPuzzle</p>
+    
+    
+    <div style="flex-direction: row; display: flex;">
+        <image src="media/webim/iphone.png" width="230" height="490" style="align-self: center;"
+        />
+        <p style="font-size: 22px; line-height: 1.5; color: white; margin-left: 3vw;">
+            globalPuzzle is a cutting-edge mobile app designed to seamlessly connect individuals 
+            who have relocated to new countries and share similar cultures and backgrounds. 
+            Our platform offers a secure and nurturing environment where users can forge meaningful 
+            connections with others who truly understand their unique experiences. By facilitating 
+            interactions among like-minded individuals, globalPuzzle creates a supportive space for 
+            building relationships based on shared cultural affinities. At globalPuzzle LLC, our mission 
+            is to connect individuals who have relocated to new countries, facilitating the formation of 
+            friendships, the discovery of supportive communities, and the fostering of a sense of belonging. 
+            We believe that regardless of location, everyone deserves to feel connected and valued. 
+            Leveraging advanced technology and a comprehensive dataset, our user-friendly platform 
+            matches individuals based on cultural backgrounds, shared experiences, and personal preferences. 
+            We enable individuals to build lasting relationships with like-minded people who understand their 
+            challenges and share similar cultural references. Through our commitment to innovation and 
+            inclusivity, we strive to be the premier platform for anyone seeking friendship, community, 
+            and a sense of belonging in their new country.
+        </p>
+    </div>
+    {% else %}
+     <p style="font-weight: bold; font-size: 48px; color: white;">About globalPuzzle</p>
+     
+    <div style="flex-direction: column; display: flex;">
+        <image src="media/webim/iphone.png" width="300" height="630" style="align-self: center;"
+        />
+        <p style="font-size: 40px; line-height: 1.5; color: white; margin-left: 3vw;">
+            globalPuzzle is a cutting-edge mobile app designed to seamlessly connect individuals 
+            who have relocated to new countries and share similar cultures and backgrounds. 
+            Our platform offers a secure and nurturing environment where users can forge meaningful 
+            connections with others who truly understand their unique experiences. By facilitating 
+            interactions among like-minded individuals, globalPuzzle creates a supportive space for 
+            building relationships based on shared cultural affinities. At globalPuzzle LLC, our mission 
+            is to connect individuals who have relocated to new countries, facilitating the formation of 
+            friendships, the discovery of supportive communities, and the fostering of a sense of belonging. 
+            We believe that regardless of location, everyone deserves to feel connected and valued. 
+            Leveraging advanced technology and a comprehensive dataset, our user-friendly platform 
+            matches individuals based on cultural backgrounds, shared experiences, and personal preferences. 
+            We enable individuals to build lasting relationships with like-minded people who understand their 
+            challenges and share similar cultural references. Through our commitment to innovation and 
+            inclusivity, we strive to be the premier platform for anyone seeking friendship, community, 
+            and a sense of belonging in their new country.
+        </p>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% include 'global/layout.html' %}
+
+{% block body %}
+    <div class="container" onsubmit="submit()">
+        <h1>Contact Us</h1>
+        <form id="form">
+            <input id="name" placeholder="Name"/>
+            <textarea name="text" placeholder=""></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        function submit(){
+            let name = document.getElementById("name").value
+            let text = document.getElementById("text").value
+        }
+    </script>
+{% endblock %}

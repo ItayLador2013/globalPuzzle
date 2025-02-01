@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "globalPuzzle",
+    "slug": "globalPuzzle",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "rgb(22,22,22)"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.itayglobal.globalPuzzle"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#251B1B"
+      },
+      "package": "com.itayglobal.globalPuzzle"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d915071c-2072-40d4-845b-41778f148114"
+      }
+    }
+  }
+}

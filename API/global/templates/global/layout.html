@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body {
+				background-color: rgb(22,22,22);
+				
+			}
+			img {
+                -webkit-user-drag: none;
+            }
+			body {
+              margin: 0;
+              padding: 0;
+              overflow-x: hidden;
+              font-family: gill sans, sans-serif;
+              display: flex;
+              flex-direction: row;
+            }
+			#logo {
+				width: 50vw;
+				height: 100vh;
+				object-fit: contain;
+			}
+
+			#nav {
+				max-width: 15vw;
+				height: 100vh;
+				position: fixed;
+				right: 0;
+				display: flex;
+				flex-direction: column;
+				font-size: 21px;
+				padding-right: 2vh;
+				background-color: rgba(0,0,0,0.1);
+				padding-left: 2vw;
+			}
+
+			#nav a{
+				color: white;
+				transition: .6s;
+				text-decoration: none;
+				opacity: .5;
+				margin-top: 4vh;
+				cursor: pointer;
+			}
+
+			#nav a:hover {
+				opacity: 1;
+			}
+
+			.container {
+				width: 87vw;
+			}
+
+			form {
+				display: flex;
+				flex-direction: column;
+				position: relative;
+				width: 100%;
+				align-items: center;
+			}
+
+			input {
+				width: 50vw;
+				border-radius: 26px;
+				background-color: rgba(0,0,0,0);
+				color: white;
+				font-size: 20px;
+				padding-top: 2vh;
+				padding-bottom: 2vh;
+				padding-left: 1vw;
+				padding-right: 1vw;
+				border-color: rgba(255,255,255,.5);
+				border-style: solid;
+			}
+			textarea {
+				width: 50vw;
+				border-radius: 26px;
+				background-color: rgba(0,0,0,0);
+				color: white;
+				font-size: 20px;
+				padding-top: 2vh;
+				padding-bottom: 2vh;
+				padding-left: 1vw;
+				padding-right: 1vw;
+				border-color: rgba(255,255,255,.5);
+				border-style: solid;
+				min-height: 50vh;
+				margin-top: 2vh;
+				font-family: gill sans, sans-serif;
+			}
+
+			button {
+				width: 20vw;
+				background-color: rgba(0,0,0,0.4);
+				color: white;
+				font-size: 20px;
+				padding: 2vh;
+				border-radius: 20px;
+				border-color: rgba(255,255,255,0.5);
+				border-style: solid;
+				margin-top: 2vh;
+			}
+			button:active {
+				opacity: .3;
+			}
+			h1 {
+				color: rgba(255,255,255,.8);
+				margin-left: 3vw;
+				font-size: 41px;
+			}
+		</style>
+
+	</head>
+	<body>
+		{% block body %}
+
+		{% endblock %}
+
+		<div id="nav">
+			<a class="nav-item" href="/">globalPuzzle</a>
+			<a class="nav-item" href="/about">About</a>
+			<a class="nav-item" href="/frequently_asked_questions">FAQ</a>
+			<a class="nav-item" href="/about_the_founders">Founders</a>
+			<a class="nav-item" href="/privacy_policy">Privacy Policy</a>
+			<a class="nav-item" href="/terms_of_service">Terms of Service</a>
+			<a class="nav-item" href="/contact">Contact</a>
+		</div>
+	</body>
+</html>
